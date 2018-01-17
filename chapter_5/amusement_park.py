@@ -1,8 +1,12 @@
-age = 21
+age = 64
 
 if age < 4:
-    print("you're free")
+    price = 0
 elif age < 18:
-    print("€5 please")
-else:
-    print("€10 for you")
+    price = 5
+elif age < 65:
+    price = 10
+elif age >= 65:
+    price = 5
+
+print("your admission cost is $" + str(price) + ".")
