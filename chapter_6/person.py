@@ -5,8 +5,5 @@ person = {
     'city': 'Cork'
 }
 
-
 for k, v in person.items():
     print(v)
-
-
