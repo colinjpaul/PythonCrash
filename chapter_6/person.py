@@ -6,4 +6,4 @@ person = {
 }
 
 for k, v in person.items():
-    print(v)
+    print(k, v)

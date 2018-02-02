@@ -5,4 +5,11 @@ favorite_languages = {
     'phil': 'python',
     }
 
-print('sarahs favorite language is ' + favorite_languages['sarah'].title())
+friends = ['phil', 'sarah']
+
+for name in favorite_languages:
+    if name in friends:
+        print('Hi ' + name.title() + '. I see your favourite language is ' + favorite_languages[name].title() + "!")
+
+if 'erin' not in favorite_languages.keys():
+    print('Erin, please take our poll!')
