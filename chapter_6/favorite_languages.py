@@ -5,7 +5,15 @@ favorite_languages = {
     'phil': 'python',
     }
 
-friends = ['phil', 'sarah']
+friends = ['phil', 'jack', 'sarah', 'tom']
+
+
+for friend in friends:
+    if friend in favorite_languages.keys():
+        print(friend.title() + ' thanks for taking part in the pool')
+    else:
+        print(friend.title() + ' please take part in the poll')
+
 
 for name in favorite_languages:
     if name in friends:
@@ -13,3 +21,9 @@ for name in favorite_languages:
 
 if 'erin' not in favorite_languages.keys():
     print('Erin, please take our poll!')
+
+for language in favorite_languages.values():
+    print(language.title() + ' is here')
+
+for language in set(favorite_languages.values()):
+    print(language.title() + ' listed only once')

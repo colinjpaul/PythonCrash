@@ -4,6 +4,7 @@ glossary = {
     'a_list': 'homogeneous sequences',
     'a_variable': 'storey a particular value in memory',
     'an_if_else_statement':  'conditional logic',
+    'sorted': 'sorts output in alphabetical order'
 }
 
 for k,v in glossary.items():
