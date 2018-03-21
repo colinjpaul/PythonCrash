@@ -49,3 +49,4 @@ Temporary Items
 *.xml
 *.iml
 *.xml___jb_old___
+*.pyc
