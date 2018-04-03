@@ -1,8 +1,5 @@
-def make_sandwich(*ingredients):
-    for ingredient in ingredients:
-        print(ingredient)
+import make_sandwich as mn
 
-
-make_sandwich('ham', 'cheese', 'tomato')
-make_sandwich('chicken', 'stuffing')
-make_sandwich('turkey', 'coleslaw', 'relish', 'cheese')
+mn.my_new_sandwich('ham', 'cheese', 'tomato')
+mn.my_new_sandwich('chicken', 'stuffing')
+mn.my_new_sandwich('turkey', 'coleslaw', 'relish', 'cheese')
