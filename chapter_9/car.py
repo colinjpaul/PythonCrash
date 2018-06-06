@@ -16,11 +16,30 @@ class Car():
         print('Cars mileage is ' + str(self.odometer_reading))
 
     def update_odometer(self, mileage):
-        '''Set the odometer reading to a given value'''
-        self.odometer_reading = mileage
+        '''
+        Set the odometer reading to a given value
+        Reject the change if it attempts to roll back to reading
+        '''
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer")
+
+    def increment_odometer(self, miles):
+        '''Add the given amount to the odometer reading'''
+        self.odometer_reading += miles
 
 my_new_car = Car('Audi', 'A4', 2018)
 print(my_new_car.get_descriptive_name())
 
 my_new_car.update_odometer(23)
 my_new_car.read_odometer()
+
+my_used_car = Car('Suburu', 'Outback', 2013)
+print(my_used_car.get_descriptive_name())
+
+my_used_car.update_odometer(23500)
+my_used_car.get_descriptive_name()
+
+my_used_car.increment_odometer(100)
+my_used_car.read_odometer()
