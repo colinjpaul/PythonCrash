@@ -48,5 +48,5 @@ user1.increment_login_attempts()
 print(user1.login_attempts)
 
 user2 = Admin()
-user2.privileges
+user2.privileges.show_privileges()
 
