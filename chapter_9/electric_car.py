@@ -61,6 +61,10 @@ class Battery:
         message += " miles on a full charge"
         print(message)
 
+    def upgrade_battery(self):
+        if self.battery_size != 85:
+            self.battery_size = 85
+
 
 class ElectricCar(Car):
 
@@ -73,8 +77,11 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery = Battery()
 
-
-my_tesla = ElectricCar('tesla', 'model s', 2016)
-print(my_tesla.get_descriptive_name())
-my_tesla.battery.describe_battery()
-my_tesla.battery.get_range()
+# my_tesla = ElectricCar('tesla', 'model s', 2016)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
+my_electric_car = ElectricCar('lada', 'model x', 1975)
+my_electric_car.battery.get_range()
+my_electric_car.battery.upgrade_battery()
+my_electric_car.battery.get_range()
