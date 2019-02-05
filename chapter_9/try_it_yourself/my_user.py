@@ -1,6 +1,5 @@
-from user import User
-import admin_priv
+import user
 
-my_user = User()
+my_user = user.Admin()
 
-#my_user.privileges.show_privileges()
+my_user.privileges.show_privileges()
